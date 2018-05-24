@@ -1,0 +1,113 @@
+body {
+  padding-top: 50px;
+  background-color: #7cc1ff;
+  color: white;
+}
+
+nav.navbar {
+  background-color: #657fe8;
+  box-shadow: 0px 0px 10px #080808;
+  color: white;
+}
+
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0;
+}
+
+a.navbar-brand {
+  color: white!important;
+}
+
+.navbar-nav>li>a {
+  color: white!important;
+}
+
+a:hover {
+  color: #313131!important;
+  text-decoration: underline;
+}
+
+.nav>li>a:hover {
+  text-decoration: none;
+  color: #313131!important;
+}
+
+
+.sepp {
+  float: right;
+  height: 50px;
+  padding-top:15px;
+  margin-right: 20px;
+
+}
+
+input {
+  color: black;
+}
+
+button {
+color: black;
+}
+
+#user-create {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+#user-create .component {
+  min-width: 500px;
+}
+
+
+#user-create div.col-md-4 {
+  float: none;
+  width: 100%;
+}
+
+#user-create .btn {
+  float: right;
+}
+.image {
+  text-align: center;
+}
+
+.heading {
+  text-align: center;
+}
+
+.hometext {
+  text-align: center;
+}
+
+
+
+.hidethisshit{
+  padding:5px 10px;
+  background:#337ab7;
+  border:1px solid #2e6da4;
+  position:relative;
+  color:#fff;
+  border-radius:2px;
+  text-align:center;
+  cursor:pointer;
+  margin-bottom: 10px;
+}
+.hide_file {
+  position: absolute;
+  z-index: 1000;
+  opacity: 0;
+  cursor: pointer;
+  right: 0;
+  top: 0;
+  height: 100%;
+  font-size: 24px;
+  width: 100%;
+  margin-bottom-bottom: 10px;
+
+}
+.bild{
+  max-width: 1109px;
+
+}
