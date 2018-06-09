@@ -28,13 +28,13 @@ class UserRepository extends Repository
      *
      * @throws Exception falls das Ausführen des Statements fehlschlägt
      */
-    public function create($username, $email, $password)
+    public function create($username, $password)
     {
         $passwordHash = password_hash($password, PASSWORD_DEFAULT);
         $query = "INSERT INTO $this->tableName (benutzername, email, passwort) VALUES (?, ?, ?)";
 
         $statement = ConnectionHandler::getConnection()->prepare($query);
-        $statement->bind_param('sss', $username, $email, $passwordHash);
+        $statement->bind_param('ss', $username, $passwordHash);
 
         if (!$statement->execute()) {
             throw new Exception($statement->error);
@@ -66,26 +66,11 @@ class UserRepository extends Repository
         return false;
 
     }
-    public function checkName($username) {
+
+    public function checkMail($username) {
         $query = "SELECT * FROM benutzer WHERE benutzername = ?";
         $statement = ConnectionHandler::getConnection()->prepare($query);
         $statement-> bind_param('s' , $username);
-
-        if(!$statement->execute())
-        {
-            throw new Exception($statement->error);
-        }
-
-        $result = $statement->get_result();
-
-        return $result->num_rows;
-
-    }
-
-    public function checkMail($email) {
-        $query = "SELECT * FROM benutzer WHERE email = ?";
-        $statement = ConnectionHandler::getConnection()->prepare($query);
-        $statement-> bind_param('s' , $email);
 
         if(!$statement->execute())
         {

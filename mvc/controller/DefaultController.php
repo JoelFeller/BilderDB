@@ -38,7 +38,7 @@ class DefaultController
         //   View Klasse beschrieben.
         $view = new View('default_index');
         $view->title = 'Home';
-        $view->heading = "Ping Pong's MADDAFACCARS";
+        $view->heading = "Joel Feller's BilderDB";
         $view->display();
     }
 }

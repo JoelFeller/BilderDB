@@ -35,21 +35,16 @@ class UserController
     {
         $error = [];
         if ($_POST['send']) {
-            $username = $_POST['username'];
-            $email = $_POST['email'];
+            $username = $_POST['email'];
             $password = $_POST['password'];
+            $password2 = $_POST['password2'];
 
             $userRepository = new UserRepository();
             if($userRepository->checkName($username) < 1){
-                if($userRepository->checkMail($email) < 1){
-                    $userRepository->create($username, $email, $password);
-                    header("Location : /user/login");
-                }
-                else {
-                    $error["wrong"] = "Es existiert bereits ein Benutzer mit dieser Email-Adresse";
-                }
+                $userRepository->create($username, $password);
+                header("Location : /user/login");
             }else {
-                $error["wrong"] = "Es existiert bereits ein Benutzer mit diesem Benutzernamen";
+                $error["wrong"] = "Es existiert bereits ein Benutzer mit dieser E-Mail Adresse";
             }
             $view = new View('user_create');
             $view->title = 'Create user';

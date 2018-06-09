@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title><?= $title ?> | MADDAFACCARS</title>
-    <link href="hat.ico" rel="icon">
+    <title><?= $title ?> | BilderDB</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -31,14 +30,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">Ping Pong's MADDAFACCARS</a>
+          <a class="navbar-brand" href="/">BilderDB</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="/">Home</a></li>
-            <li><a href="/review">Reviews</a></li>
+            <li><a href="/galerie/oeffentlich">Galerie</a></li>
             <li><a href="/user">Users</a></li>
-            <li><a href="/review/review">Create review</a></li>
+
               <?php
               if(!isset($_SESSION['username']))
               {
@@ -47,34 +46,13 @@
               }
               else
               {
+                echo '<li><a href="/galerie/member">Galerie</a></li>';
+                echo '<li><a href="/galerie/galerie">Create galerie</a></li>';
                 echo '<li><a href="/user/doLogout">Logout</a>';
               }
               ?>
           </ul>
-        </div><!--/.nav-collapse -->
-
-        
-    <!--<label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="username" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="passwort" required>
-
-    <button type="submit">Login</button>
-  -->
-   <!-- <form action = "" method = "post"> 
-      <div class="sepp">
-                  <label>Username  :</label><input type = "text" name = "username" class = "box"/>
-                  <label>Password  :</label><input  type = "password" name = "password" class = "box" />
-                  <input  type = "submit" value = " Submit "/>
-                </div>
-              </form> -->
-
-
-
-
-
-
+        </div>
 
     </nav>
 

@@ -25,7 +25,7 @@ return array(
         'host'     => 'localhost',
         'username' => 'root',
         'password' => '',
-        'database' => 'maddafaccars',
+        'database' => 'bilder',
     ),
 
 );
