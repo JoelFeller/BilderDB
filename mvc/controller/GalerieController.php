@@ -57,14 +57,22 @@ class GalerieController
 
     public function oeffentlich()
     {
-
-
+        $error = [];
+        $view = new View('galerie_oeffentlich');
+        $view->title = 'Öffentlicher Bereich';
+        $view->heading = 'Öffentlicher Bereich';
+        $view->errors = $error;
+        $view->display();
     }
 
     public function member()
     {
-
-
+        $error = [];
+        $view = new View('galerie_member');
+        $view->title = 'Member Bereich';
+        $view->heading = 'Member Bereich';
+        $view->errors = $error;
+        $view->display();
     }
 
 

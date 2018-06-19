@@ -33,30 +33,35 @@ class UserController
 
     public function doCreate()
     {
-        $error = [];
         if ($_POST['send']) {
-            $username = $_POST['email'];
-            $password = $_POST['password'];
-            $password2 = $_POST['password2'];
+        $password = $_POST['password'];
+        $password2 = $_POST['password2'];
 
-            $userRepository = new UserRepository();
-            if($userRepository->checkName($username) < 1){
-                $userRepository->create($username, $password);
-                header("Location : /user/login");
-            }else {
-                $error["wrong"] = "Es existiert bereits ein Benutzer mit dieser E-Mail Adresse";
+        if($password == $password2){
+            $error = [];
+
+                $username = $_POST['username'];
+                $password = $_POST['password'];
+
+                $userRepository = new UserRepository();
+                if ($userRepository->checkName($username) < 1) {
+                    $userRepository->create($username, $password);
+                    header("Location: /user/login");
+                } else {
+                    $error["wrong"] = "Es existiert bereits ein Benutzer mit dieser E-Mail Adresse";
+                }
+                $view = new View('user_create');
+                $view->title = 'Create user';
+                $view->heading = 'Create user';
+                $view->errors = $error;
+                $view->display();
+
             }
-            $view = new View('user_create');
-            $view->title = 'Create user';
-            $view->heading = 'Create user';
-            $view->errors = $error;
-            $view->display();
-
-
+            else {
+                echo '<p>Die Passwörter stimmen nicht miteinander überein';
+            }
         }
 
-        // Anfrage an die URI /user weiterleiten (HTTP 302)
-        header('Location: /user/doCreate');
     }
 
     public function delete()
@@ -82,7 +87,6 @@ class UserController
             if($loginErfolgreich) {
                 $_SESSION['username'] = $username;
                 header('Location: /');
-
             }
             else
             {

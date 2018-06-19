@@ -35,19 +35,23 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="/">Home</a></li>
-            <li><a href="/galerie/oeffentlich">Galerie</a></li>
+
             <li><a href="/user">Users</a></li>
 
               <?php
               if(!isset($_SESSION['username']))
               {
+                echo '<li><a href="/galerie/oeffentlich">Öffentliche Galerie</a></li>';
+                echo '<li><a href="/user/login">Member Bereich</a>';
                 echo '<li><a href="/user/create">Create user</a></li>';
                 echo '<li><a href="/user/login">Login</a>';
               }
               else
               {
-                echo '<li><a href="/galerie/member">Galerie</a></li>';
-                echo '<li><a href="/galerie/galerie">Create galerie</a></li>';
+                echo '<li><a href="/galerie/oeffentlich">Öffentliche Galerie</a></li>';
+                echo '<li><a href="/galerie/member">Member Bereich</a></li>';
+                echo '<li><a href="/galerie/galerie">Galerie erstellen</a></li>';
+                echo '<li><a href="/user/profile">Profil bearbeiten</a></li>';
                 echo '<li><a href="/user/doLogout">Logout</a>';
               }
               ?>

@@ -31,7 +31,7 @@ class UserRepository extends Repository
     public function create($username, $password)
     {
         $passwordHash = password_hash($password, PASSWORD_DEFAULT);
-        $query = "INSERT INTO $this->tableName (benutzername, email, passwort) VALUES (?, ?, ?)";
+        $query = "INSERT INTO $this->tableName (username, password) VALUES (?, ?)";
 
         $statement = ConnectionHandler::getConnection()->prepare($query);
         $statement->bind_param('ss', $username, $passwordHash);
@@ -46,7 +46,7 @@ class UserRepository extends Repository
 
     public function login($username, $password){
 
-        $query = "SELECT * FROM benutzer WHERE benutzername = ?";
+        $query = "SELECT * FROM {$this->tableName} WHERE username = ?";
         $statement = ConnectionHandler::getConnection()->prepare($query);
         $statement-> bind_param('s' , $username);
 
@@ -59,16 +59,19 @@ class UserRepository extends Repository
 
         $user = $result->fetch_object();
 
-        if (password_verify($password, $user->passwort)) {
+        if (password_verify($password, $user->password)) {
              $_SESSION['id']=$user->id; 
              return true;
         }
-        return false;
+
+            return false;
+
+
 
     }
 
-    public function checkMail($username) {
-        $query = "SELECT * FROM benutzer WHERE benutzername = ?";
+    public function checkName($username) {
+        $query = "SELECT * FROM {$this->tableName} WHERE username = ?";
         $statement = ConnectionHandler::getConnection()->prepare($query);
         $statement-> bind_param('s' , $username);
 
