@@ -8,7 +8,7 @@
 			<div class="panel panel-default">
 				<div class="panel-heading"><?= $user->username ?></div>
 				<div class="panel-body">
-					<p style="color:black;" class="description"> User: <?= $user->username ?> EMail-Adresse: <a href="mailto:<?= $user->email; ?>"><?= $user->email; ?></a></p>
+					<p style="color:black;" class="description"> User: <?= $user->username ?></a></p>
 					<p>
 						<a title="Löschen" href="/user/delete?id=<?= $user->id ?>">Delete</a>
 					</p>

@@ -13,36 +13,19 @@ class GalerieRepository extends Repository
     protected $tableName = 'galerie';
 
 
- public function create($username, $image)
+ public function create($benutzer, $galeriename, $privacy)
     {
-        
-        $query = "INSERT INTO $this->tableName (benutzer, image) VALUES (?, ?)";
-        $image = '/' . $image;
+
+        $query = "INSERT INTO $this->tableName (benutzer, galeriename, privacy) VALUES (?, ?, ?)";
 
         $statement = ConnectionHandler::getConnection()->prepare($query);
-        $statement->bind_param('ss', $username, $image);
+        $statement->bind_param('iss', $benutzer, $galeriename, $privacy);
 
         if (!$statement->execute()) {
             throw new Exception($statement->error);
         }
 
         return $statement->insert_id;
-    }
-
-    /**
-     * @param $image
-     * @return string
-     */
-    public function imgToFolder($image)
-    {
-     $ext = pathinfo($image['name'], PATHINFO_EXTENSION);
-     $timestamp = time();
-     $file_destination = "/images" . $timestamp . '.' . $ext;
-
-     if (move_uploaded_file($image['tmp_name'], $file_destination)){
-         echo $file_destination;
-     }
-     return $file_destination;
     }
 
 }

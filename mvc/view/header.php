@@ -51,6 +51,7 @@
                 echo '<li><a href="/galerie/oeffentlich">Öffentliche Galerie</a></li>';
                 echo '<li><a href="/galerie/member">Member Bereich</a></li>';
                 echo '<li><a href="/galerie/galerie">Galerie erstellen</a></li>';
+                echo '<li><a href="/bilder/hochladen">Bild hochladen</a></li>';
                 echo '<li><a href="/user/profile">Profil bearbeiten</a></li>';
                 echo '<li><a href="/user/doLogout">Logout</a>';
               }

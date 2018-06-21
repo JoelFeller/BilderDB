@@ -85,4 +85,32 @@ class UserRepository extends Repository
         return $result->num_rows;
 
     }
+
+    public function updateById($username, $password, $id){
+
+        if($username != null){
+            $query = "UPDATE {$this->tableName} SET username = ? WHERE id = ?";
+            $statement = ConnectionHandler::getConnection()->prepare($query);
+            $statement-> bind_param('si', $username, $id);
+
+            if(!$statement->execute())
+            {
+                throw new Exception($statement->error);
+            }
+
+        }
+
+
+        if($password != null){
+            $passwordquery = "UPDATE {$this->tableName} SET password = ? WHERE id = ?";
+            $statement = ConnectionHandler::getConnection()->prepare($passwordquery);
+            $statement-> bind_param('si', $password, $id);
+
+            if(!$statement->execute())
+            {
+                throw new Exception($statement->error);
+            }
+
+        }
+    }
 }

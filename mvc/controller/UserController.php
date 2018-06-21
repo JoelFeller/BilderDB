@@ -58,6 +58,12 @@ class UserController
 
             }
             else {
+                $error = [];
+                $view = new View('user_create');
+                $view->title = 'Create user';
+                $view->heading = 'Create user';
+                $view->errors = $error;
+                $view->display();
                 echo '<p>Die Passwörter stimmen nicht miteinander überein';
             }
         }
@@ -117,6 +123,73 @@ class UserController
         header('Location: /');
     }
 
+    public function doEdit()
+    {
+        if ($_POST['send']) {
+            $password = $_POST['password'];
+            $password2 = $_POST['password2'];
+
+            if($password == $password2){
+                $error = [];
+
+                $username = $_POST['username'];
+                $password = $_POST['password'];
+
+                $userRepository = new UserRepository();
+                if ($userRepository->checkName($username) < 1) {
+                    $userRepository->updateById($username, $password, $_SESSION['id']);
+                    header("Location: /");
+                } else {
+                    $error["wrong"] = "Es existiert bereits ein Benutzer mit dieser E-Mail Adresse";
+                }
+                $view = new View('user_edit');
+                $view->title = 'User bearbeiten';
+                $view->heading = 'User bearbeiten';
+                $view->errors = $error;
+                $view->display();
+
+            }
+            else {
+                $error = [];
+                $view = new View('user_edit');
+                $view->title = 'User bearbeiten';
+                $view->heading = 'User bearbeiten';
+                $view->errors = $error;
+                $view->display();
+
+                echo '<p>Die Passwörter stimmen nicht miteinander überein';
+            }
+        }
+
+        if ($_POST['delete']) {
+
+                $userRepository = new UserRepository();
+                if ($userRepository->readById($_SESSION['id']) > 0) {
+                    $userRepository->deleteById($_SESSION['id']);
+                    $_SESSION['id'] = null;
+                    session_destroy();
+                    header("Location: /");
+                } else {
+                    $error["wrong"] = "Hopp Thun!";
+                }
+                $view = new View('user_edit');
+                $view->title = 'User bearbeiten';
+                $view->heading = 'User bearbeiten';
+                $view->errors = $error;
+                $view->display();
+
+
+
+            }
+    }
+
+    public function profile()
+    {
+        $view = new View('user_edit');
+        $view->title = 'User bearbeiten';
+        $view->heading = 'User bearbeiten';
+        $view->display();
+    }
 }
 
 ?>
