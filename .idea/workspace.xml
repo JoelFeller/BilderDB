@@ -2,20 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dce3611d-c18e-45ef-995f-17f64aca1e6f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/mvc/controller/BilderController.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/mvc/view/galerie_hochladen.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/mvc/view/user_edit.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mvc/view/galerie_edit.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mvc/view/galerie_einzelansicht.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/mvc/controller/BilderController.php" afterPath="$PROJECT_DIR$/mvc/controller/BilderController.php" />
       <change beforePath="$PROJECT_DIR$/mvc/controller/GalerieController.php" afterPath="$PROJECT_DIR$/mvc/controller/GalerieController.php" />
-      <change beforePath="$PROJECT_DIR$/mvc/controller/UserController.php" afterPath="$PROJECT_DIR$/mvc/controller/UserController.php" />
-      <change beforePath="$PROJECT_DIR$/mvc/repository/BilderRepository.php" afterPath="$PROJECT_DIR$/mvc/repository/BilderRepository.php" />
+      <change beforePath="$PROJECT_DIR$/mvc/lib/Security.php" afterPath="$PROJECT_DIR$/mvc/lib/Security.php" />
+      <change beforePath="$PROJECT_DIR$/mvc/public/css/style.css" afterPath="$PROJECT_DIR$/mvc/public/css/style.css" />
       <change beforePath="$PROJECT_DIR$/mvc/repository/GalerieRepository.php" afterPath="$PROJECT_DIR$/mvc/repository/GalerieRepository.php" />
-      <change beforePath="$PROJECT_DIR$/mvc/repository/UserRepository.php" afterPath="$PROJECT_DIR$/mvc/repository/UserRepository.php" />
       <change beforePath="$PROJECT_DIR$/mvc/view/galerie_create.php" afterPath="$PROJECT_DIR$/mvc/view/galerie_create.php" />
+      <change beforePath="$PROJECT_DIR$/mvc/view/galerie_hochladen.php" afterPath="$PROJECT_DIR$/mvc/view/galerie_hochladen.php" />
+      <change beforePath="$PROJECT_DIR$/mvc/view/galerie_index.php" afterPath="$PROJECT_DIR$/mvc/view/galerie_index.php" />
       <change beforePath="$PROJECT_DIR$/mvc/view/galerie_member.php" afterPath="$PROJECT_DIR$/mvc/view/galerie_member.php" />
-      <change beforePath="$PROJECT_DIR$/mvc/view/galerie_oeffentlich.php" afterPath="$PROJECT_DIR$/mvc/view/galerie_oeffentlich.php" />
       <change beforePath="$PROJECT_DIR$/mvc/view/header.php" afterPath="$PROJECT_DIR$/mvc/view/header.php" />
-      <change beforePath="$PROJECT_DIR$/mvc/view/user_index.php" afterPath="$PROJECT_DIR$/mvc/view/user_index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,50 +28,55 @@
       <file leaf-file-name="GalerieRepository.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mvc/repository/GalerieRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+            <state relative-caret-position="379">
+              <caret line="34" column="54" lean-forward="false" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
               <folding>
-                <marker date="1529543567380" expanded="true" signature="357:435" ph="INSERT INTO ${$this-&gt;tableName}... " />
+                <marker date="1529608859543" expanded="true" signature="352:430" ph="INSERT INTO ${$this-&gt;tableName}... " />
+                <marker date="1529608859543" expanded="true" signature="847:902" ph="UPDATE $... " />
+                <marker date="1529608859543" expanded="true" signature="1241:1295" ph="UPDATE $... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GalerieController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="user_edit.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mvc/view/user_edit.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mvc/view/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="379">
+              <caret line="54" column="51" lean-forward="false" selection-start-line="54" selection-start-column="51" selection-end-line="54" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="galerie_edit.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mvc/view/galerie_edit.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+              <folding>
+                <marker date="1529610197062" expanded="true" signature="148:188" ph="..." />
+                <marker date="1529610197062" expanded="true" signature="489:624" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GalerieController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mvc/controller/GalerieController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="galerie_oeffentlich.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mvc/view/galerie_oeffentlich.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="galerie_member.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mvc/view/galerie_member.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="6" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user_index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mvc/view/user_index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+            <state relative-caret-position="68">
+              <caret line="106" column="44" lean-forward="false" selection-start-line="106" selection-start-column="44" selection-end-line="106" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -81,35 +85,11 @@
       <file leaf-file-name="BilderController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mvc/controller/BilderController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="33" column="39" lean-forward="false" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+            <state relative-caret-position="425">
+              <caret line="34" column="12" lean-forward="false" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="44" />
               <folding>
-                <marker date="1529546105797" expanded="true" signature="3450:3509" ph="INSERT INTO ${$table}... " />
+                <marker date="1529580525424" expanded="true" signature="3496:3555" ph="INSERT INTO ${$table}... " />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="galerie_hochladen.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mvc/view/galerie_hochladen.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding>
-                <marker date="1529528835738" expanded="true" signature="254:290" ph="..." />
-                <marker date="1529528835738" expanded="true" signature="254:407" ph="..." />
-                <marker date="1529528835738" expanded="true" signature="254:421" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mvc/controller/UserController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="169" column="38" lean-forward="false" selection-start-line="169" selection-start-column="38" selection-end-line="169" selection-end-column="38" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -117,8 +97,8 @@
       <file leaf-file-name="UserRepository.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mvc/repository/UserRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="93" column="56" lean-forward="false" selection-start-line="93" selection-start-column="56" selection-end-line="93" selection-end-column="56" />
+            <state relative-caret-position="56">
+              <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="114" selection-end-column="5" />
               <folding>
                 <marker date="1529493430921" expanded="true" signature="1061:1124" ph="INSERT INTO ${$this-&gt;tableName}... " />
                 <marker date="1529493430921" expanded="true" signature="1482:1533" ph="SELECT * FRO... benutzer" />
@@ -130,13 +110,39 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mvc/controller/UserController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="135" column="47" lean-forward="true" selection-start-line="135" selection-start-column="47" selection-end-line="135" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="galerie_hochladen.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mvc/view/galerie_hochladen.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+              <folding>
+                <marker date="1529564064128" expanded="true" signature="244:248" ph="..." />
+                <marker date="1529564064128" expanded="true" signature="283:319" ph="..." />
+                <marker date="1529564064128" expanded="true" signature="283:323" ph="..." />
+                <marker date="1529564064128" expanded="true" signature="283:430" ph="..." />
+                <marker date="1529564064128" expanded="true" signature="283:444" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="galerie_create.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mvc/view/galerie_create.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+            <state relative-caret-position="102">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="12" selection-end-column="14" />
               <folding>
-                <marker date="1529541647943" expanded="true" signature="191:326" ph="..." />
+                <marker date="1529570256952" expanded="true" signature="220:355" ph="..." />
               </folding>
             </state>
           </provider>
@@ -151,6 +157,8 @@
       <find>review</find>
       <find>benutzer</find>
       <find>check</find>
+      <find>oeffent</find>
+      <find>time</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -163,23 +171,27 @@
         <option value="$PROJECT_DIR$/mvc/view/footer.php" />
         <option value="$PROJECT_DIR$/mvc/controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/mvc/lib/formbuilder/PasswordBuilder.php" />
-        <option value="$PROJECT_DIR$/mvc/view/galerie_index.php" />
         <option value="$PROJECT_DIR$/mvc/view/default_index.php" />
         <option value="$PROJECT_DIR$/mvc/configlogin.php" />
         <option value="$PROJECT_DIR$/mvc/view/user_create.php" />
         <option value="$PROJECT_DIR$/mvc/view/user_edit.php" />
         <option value="$PROJECT_DIR$/mvc/repository/UserRepository.php" />
         <option value="$PROJECT_DIR$/mvc/controller/UserController.php" />
-        <option value="$PROJECT_DIR$/mvc/view/header.php" />
-        <option value="$PROJECT_DIR$/mvc/repository/BilderRepository.php" />
-        <option value="$PROJECT_DIR$/mvc/view/galerie_hochladen.php" />
         <option value="$PROJECT_DIR$/mvc/view/user_index.php" />
-        <option value="$PROJECT_DIR$/mvc/view/galerie_create.php" />
-        <option value="$PROJECT_DIR$/mvc/repository/GalerieRepository.php" />
-        <option value="$PROJECT_DIR$/mvc/view/galerie_member.php" />
-        <option value="$PROJECT_DIR$/mvc/controller/GalerieController.php" />
         <option value="$PROJECT_DIR$/mvc/view/galerie_oeffentlich.php" />
+        <option value="$PROJECT_DIR$/mvc/public/css/style.css" />
+        <option value="$PROJECT_DIR$/mvc/view/galerie_hochladen.php" />
+        <option value="$PROJECT_DIR$/mvc/view/galerie_create.php" />
+        <option value="$PROJECT_DIR$/mvc/repository/BilderRepository.php" />
         <option value="$PROJECT_DIR$/mvc/controller/BilderController.php" />
+        <option value="$PROJECT_DIR$/mvc/lib/Security.php" />
+        <option value="$PROJECT_DIR$/mvc/view/galerie_einzelansicht.php" />
+        <option value="$PROJECT_DIR$/mvc/view/galerie_index.php" />
+        <option value="$PROJECT_DIR$/mvc/view/galerie_member.php" />
+        <option value="$PROJECT_DIR$/mvc/repository/GalerieRepository.php" />
+        <option value="$PROJECT_DIR$/mvc/view/header.php" />
+        <option value="$PROJECT_DIR$/mvc/view/galerie_edit.php" />
+        <option value="$PROJECT_DIR$/mvc/controller/GalerieController.php" />
       </list>
     </option>
   </component>
@@ -240,14 +252,14 @@
               <item name="BilderDB" type="b2602c69:ProjectViewProjectNode" />
               <item name="BilderDB" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="mvc" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="formbuilder" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="BilderDB" type="b2602c69:ProjectViewProjectNode" />
               <item name="BilderDB" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="mvc" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="BilderDB" type="b2602c69:ProjectViewProjectNode" />
@@ -304,12 +316,12 @@
       <workItem from="1527835247818" duration="3428000" />
       <workItem from="1528306724145" duration="8079000" />
       <workItem from="1528561758622" duration="316000" />
-      <workItem from="1529045621773" duration="27796000" />
+      <workItem from="1529045621773" duration="40223000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47463000" />
+    <option name="totallyTimeSpent" value="59890000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -346,43 +358,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mvc/view/default_index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="149" lean-forward="false" selection-start-line="15" selection-start-column="149" selection-end-line="15" selection-end-column="149" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/lib/Repository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/configlogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="32" lean-forward="false" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/view/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="58" lean-forward="false" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/view/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="82" column="28" lean-forward="false" selection-start-line="82" selection-start-column="28" selection-end-line="82" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mvc/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -528,14 +503,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/lib/View.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1032">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mvc/controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="481">
@@ -602,14 +569,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/view/galerie_index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="94" lean-forward="false" selection-start-line="11" selection-start-column="94" selection-end-line="11" selection-end-column="94" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mvc/view/user_login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -634,114 +593,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/lib/Repository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1467">
-          <caret line="173" column="5" lean-forward="true" selection-start-line="173" selection-start-column="5" selection-end-line="173" selection-end-column="5" />
-          <folding>
-            <marker date="1524235767000" expanded="true" signature="3791:3834" ph="SELECT * FRO... $" />
-            <marker date="1524235767000" expanded="true" signature="4995:5037" ph="SELECT * FRO... $" />
-            <marker date="1524235767000" expanded="true" signature="5780:5821" ph="DELETE FROM $... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/view/user_edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="92" lean-forward="false" selection-start-line="7" selection-start-column="92" selection-end-line="7" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mvc/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/view/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="53" column="42" lean-forward="false" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/repository/BilderRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="27" column="41" lean-forward="false" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
-          <folding>
-            <marker date="1529525089550" expanded="true" signature="718:799" ph="INSERT INTO ${$this-&gt;tableName}... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/view/galerie_create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-          <folding>
-            <marker date="1529541647943" expanded="true" signature="191:326" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/repository/UserRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="93" column="56" lean-forward="false" selection-start-line="93" selection-start-column="56" selection-end-line="93" selection-end-column="56" />
-          <folding>
-            <marker date="1529493430921" expanded="true" signature="1061:1124" ph="INSERT INTO ${$this-&gt;tableName}... " />
-            <marker date="1529493430921" expanded="true" signature="1482:1533" ph="SELECT * FRO... benutzer" />
-            <marker date="1529493430921" expanded="true" signature="2090:2141" ph="SELECT * FRO... benutzer" />
-            <marker date="1529493430921" expanded="true" signature="2577:2632" ph="UPDATE $... " />
-            <marker date="1529493430921" expanded="true" signature="2970:3025" ph="UPDATE $... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/controller/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="169" column="38" lean-forward="false" selection-start-line="169" selection-start-column="38" selection-end-line="169" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/view/galerie_member.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="6" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/controller/GalerieController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/repository/GalerieRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-          <folding>
-            <marker date="1529543567380" expanded="true" signature="357:435" ph="INSERT INTO ${$this-&gt;tableName}... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/view/user_index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -754,25 +609,192 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/controller/BilderController.php">
+    <entry file="file://$PROJECT_DIR$/mvc/view/user_index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="33" column="39" lean-forward="false" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+        <state relative-caret-position="306">
+          <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="115" column="15" lean-forward="false" selection-start-line="115" selection-start-column="15" selection-end-line="115" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/data/schema.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/lib/View.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1020">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/lib/Security.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/lib/Repository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="787">
+          <caret line="133" column="20" lean-forward="false" selection-start-line="133" selection-start-column="20" selection-end-line="133" selection-end-column="20" />
           <folding>
-            <marker date="1529546105797" expanded="true" signature="3450:3509" ph="INSERT INTO ${$table}... " />
+            <marker date="1524235767000" expanded="true" signature="3791:3834" ph="SELECT * FRO... $" />
+            <marker date="1524235767000" expanded="true" signature="4995:5037" ph="SELECT * FRO... $" />
+            <marker date="1524235767000" expanded="true" signature="5780:5821" ph="DELETE FROM $... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/repository/BilderRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+          <folding>
+            <marker date="1529580449477" expanded="true" signature="718:799" ph="INSERT INTO ${$this-&gt;tableName}... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/view/galerie_index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="29" lean-forward="false" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/view/galerie_member.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="44" lean-forward="true" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/repository/GalerieRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="34" column="54" lean-forward="false" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
+          <folding>
+            <marker date="1529608859543" expanded="true" signature="352:430" ph="INSERT INTO ${$this-&gt;tableName}... " />
+            <marker date="1529608859543" expanded="true" signature="847:902" ph="UPDATE $... " />
+            <marker date="1529608859543" expanded="true" signature="1241:1295" ph="UPDATE $... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/view/user_edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/view/galerie_create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="12" selection-end-column="14" />
+          <folding>
+            <marker date="1529570256952" expanded="true" signature="220:355" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/view/galerie_einzelansicht.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="71" lean-forward="false" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/view/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="54" column="51" lean-forward="false" selection-start-line="54" selection-start-column="51" selection-end-line="54" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mvc/view/galerie_hochladen.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
           <folding>
-            <marker date="1529528835738" expanded="true" signature="254:290" ph="..." />
-            <marker date="1529528835738" expanded="true" signature="254:407" ph="..." />
-            <marker date="1529528835738" expanded="true" signature="254:421" ph="..." />
+            <marker date="1529564064128" expanded="true" signature="244:248" ph="..." />
+            <marker date="1529564064128" expanded="true" signature="283:319" ph="..." />
+            <marker date="1529564064128" expanded="true" signature="283:323" ph="..." />
+            <marker date="1529564064128" expanded="true" signature="283:430" ph="..." />
+            <marker date="1529564064128" expanded="true" signature="283:444" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/view/galerie_edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding>
+            <marker date="1529610197062" expanded="true" signature="148:188" ph="..." />
+            <marker date="1529610197062" expanded="true" signature="489:624" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/controller/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="135" column="47" lean-forward="true" selection-start-line="135" selection-start-column="47" selection-end-line="135" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/repository/UserRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="114" selection-end-column="5" />
+          <folding>
+            <marker date="1529493430921" expanded="true" signature="1061:1124" ph="INSERT INTO ${$this-&gt;tableName}... " />
+            <marker date="1529493430921" expanded="true" signature="1482:1533" ph="SELECT * FRO... benutzer" />
+            <marker date="1529493430921" expanded="true" signature="2090:2141" ph="SELECT * FRO... benutzer" />
+            <marker date="1529493430921" expanded="true" signature="2577:2632" ph="UPDATE $... " />
+            <marker date="1529493430921" expanded="true" signature="2970:3025" ph="UPDATE $... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/controller/BilderController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="34" column="12" lean-forward="false" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="44" />
+          <folding>
+            <marker date="1529580525424" expanded="true" signature="3496:3555" ph="INSERT INTO ${$table}... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/controller/GalerieController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="106" column="44" lean-forward="false" selection-start-line="106" selection-start-column="44" selection-end-line="106" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>

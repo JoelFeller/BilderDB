@@ -1,5 +1,5 @@
 <article class="hreview open special">
-    <?php if (empty($galeriess)): ?>
+    <?php if (empty($galeries)): ?>
         <div class="dhd">
             <h2 class="item title">Woops! No galeries found.</h2>
         </div>

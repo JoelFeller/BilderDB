@@ -1,6 +1,7 @@
 <?php
 
 require_once '../repository/BilderRepository.php';
+require_once '../repository/GalerieRepository.php';
 
 
 /**
@@ -30,8 +31,8 @@ class BilderController
 
     public function doUpload()
     {
-        if ($_POST['submitpiccture']) {
-            $gid = $_POST['privatsphäre'];
+        if ($_POST['submitpicture']) {
+            $gid = $_POST['galerieauswahl'];
             $title = $_POST['title'];
             $description = $_POST['description'];
             $image = 'images/' . time() . '_' . $_FILES['image']['name'];
@@ -43,7 +44,7 @@ class BilderController
         }
 
         // Anfrage an die URI /user weiterleiten (HTTP 302)
-        header('Location: /galerie');
+        header('Location: /');
 
     }
 
@@ -107,9 +108,11 @@ class BilderController
     }
 
     public function hochladen(){
+        $galerie = new GalerieRepository();
         $view = new View('galerie_hochladen');
         $view->title = 'Bilder hochladen';
         $view->heading = 'Bilder hochladen';
+        $view->galerie = $galerie->readAll();
         $view->display();
     }
 }

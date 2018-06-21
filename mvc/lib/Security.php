@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: bfellj
- * Date: 20.04.2018
- * Time: 13:08
- */
+
 
 class Security
 {
